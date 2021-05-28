@@ -7,17 +7,18 @@ if (parseInt(age) < 18){
     var sconto = (ticket * 20) / 100;
     var ticket = ticket - sconto;
     var prezzo = parseInt(km) * ticket;
-    document.getElementById('FinalPrice').innerHTML = 'il final price è ' + prezzo;
+    document.getElementById('FinalPrice').innerHTML = 'il final price è ' + (prezzo.toFixed(1));
+    
     
 } else if (parseInt(age) > 65){ 
     var sconto = (ticket * 40) / 100;
     var ticket = ticket - sconto;
     var prezzo = parseInt(km) * ticket;
-    document.getElementById('FinalPrice').innerHTML = 'il final price è ' + prezzo;
+    document.getElementById('FinalPrice').innerHTML = 'il final price è ' + (prezzo.toFixed(1));
 
 }else{
     var prezzo = ticket * parseInt(km);
-    document.getElementById('FinalPrice').innerHTML = 'il final price è ' + prezzo;
+    document.getElementById('FinalPrice').innerHTML = 'il final price è ' + (prezzo.toFixed(1));
 
 }
 
