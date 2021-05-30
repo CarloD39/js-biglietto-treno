@@ -1,7 +1,11 @@
 var km = prompt('quanti chilometri di percorrenza?');
-var age = prompt('inserire età passegero');
+var birthday = prompt('inserire data di nascita');
+var today = 2021;
+
+var age = parseInt(today) - parseInt(birthday);
 
 var ticket = 0.21 ;
+
 
 if (parseInt(age) < 18){
     var sconto = (ticket * 20) / 100;
@@ -20,10 +24,3 @@ if (parseInt(age) < 18){
     }
 }
 document.getElementById('FinalPrice').innerHTML = 'il final price è ' + (prezzo.toFixed(1));
-
-
-
-
-    
-
-
